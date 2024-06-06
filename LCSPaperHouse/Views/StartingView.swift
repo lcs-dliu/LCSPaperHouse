@@ -11,7 +11,10 @@ struct StartingView: View {
     var body: some View {
         VStack {
             Image("LCS logo")
-            Text("Paper house")
+            Text("Paper House")
+                .foregroundColor(Color("LCS green"))
+                .font(.largeTitle)
+            Spacer()
             Text("Get started")
         }
         .padding()
