@@ -46,15 +46,14 @@ struct HouseView: View {
             }
             
         }
-        Spacer()
-        .padding()
+       // Spacer()
+//        .padding()
     }
 }
 
 #Preview {
     TabView(selection: Binding.constant(1)) {
         HouseView()
-        
             .tabItem{
                 Image(systemName: "house.fill")
                     .foregroundColor(.white)
@@ -62,15 +61,15 @@ struct HouseView: View {
             }
             .tag(1)
 
-        Text("Entries")
+        Text("Rank")
             .tabItem{
                 Image(systemName: "chart.bar.xaxis")
-                Text("rank")
+                Text("Rank")
             }
             .tag(2)
     
 
-        Text("Settings")
+        Text("History")
             .tabItem {
                 Image(systemName: "book.fill")
                 Text("History")

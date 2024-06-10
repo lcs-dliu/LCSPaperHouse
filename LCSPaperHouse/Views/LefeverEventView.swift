@@ -1,13 +1,13 @@
 //
-//  LefeverHistoryView.swift
+//  LefeverEventView.swift
 //  LCSPaperHouse
 //
-//  Created by Chenxi Liu on 2024/6/6.
+//  Created by Chenxi Liu on 2024/6/7.
 //
 
 import SwiftUI
 
-struct LefeverHistoryView: View {
+struct LefeverEventView: View {
     var body: some View {
         ZStack{
             VStack{
@@ -22,27 +22,37 @@ struct LefeverHistoryView: View {
                     .frame(width: 130, height: 130)
                     .scaledToFit()
             }
-            VStack{
-                    HStack{
-                        Text("LEFEVER")
-                            .font(.custom("Baskerville", size: 50))
-                            .padding(.leading)
-                        Spacer()
+            
+            VStack(alignment: .leading){
+                HStack{
+                    Text("Upcoming Events")
+                        .font(.custom("Baskerville", size: 30))
+                        .padding(.leading)
+                    Spacer()
                 }
+                VStack(alignment: .leading){
+                    Text("5/25.2024")
+                    Text("Regatta Day")
+                }
+                .padding(.leading)
+                
             }
         }
     }
-}
+      //  Spacer()
+    }
 
-#Preview {
-    TabView(selection: Binding.constant(1)) {
-        LefeverHistoryView()
+
+#Preview{
+    TabView(selection: Binding.constant(3)) {
+        
+        Text("Introduction")
             .tabItem{
                 Image(systemName: "book.fill")
                 Text("Introduction")
             }
             .tag(1)
-
+        
         Text("People")
             .tabItem{
                 Image(systemName: "person.fill")
@@ -50,14 +60,12 @@ struct LefeverHistoryView: View {
             }
             .tag(2)
     
-
-        Text("Calendar")
+        LefeverEventView()
             .tabItem {
                 Image(systemName: "calendar")
                 Text("Calendar")
             }
             .tag(3)
-        
         
     }
 }
