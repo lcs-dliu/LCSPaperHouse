@@ -13,8 +13,7 @@ struct PullenView: View {
         VStack {
             
             Text("PULLEN")
-            .font(.largeTitle)
-            .font(.callout)
+                .font(.custom("Baskerville", size: 40))
             .foregroundColor(.blue)
             Image("Pullen")
                 .resizable()

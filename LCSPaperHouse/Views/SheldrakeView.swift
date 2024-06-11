@@ -13,8 +13,7 @@ struct SheldrakeView: View {
         VStack {
             
             Text("SHELDRAKE")
-            .font(.largeTitle)
-            .font(.callout)
+                .font(.custom("Baskerville", size: 40))
             .foregroundColor(.green)
             Image("Sheldrake")
                 .resizable()

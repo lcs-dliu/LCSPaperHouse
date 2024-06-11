@@ -16,6 +16,9 @@ struct LoginView: View {
                 .foregroundColor(Color("LCS green"))
                 .font(.largeTitle)
             Text("Please type in your LCS email")
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 300, height:60)
+                .foregroundColor(Color.gray)
         }
         Spacer()
         .padding()

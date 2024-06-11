@@ -29,6 +29,7 @@ struct LefeverHistoryView: View {
                             .padding(.leading)
                         Spacer()
                 }
+                Spacer()
             }
         }
     }

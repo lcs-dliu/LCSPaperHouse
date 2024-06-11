@@ -15,7 +15,8 @@ struct StartingView: View {
                 .foregroundColor(Color("LCS green"))
                 .font(.largeTitle)
             Spacer()
-            Text("Get started")
+            Text("Click here to get started")
+                .font(.custom("Arial", size: 25))
         }
         .padding()
     }

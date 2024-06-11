@@ -11,8 +11,8 @@ struct LefeverView: View {
     var body: some View {
         Spacer()
         VStack {
-            
-            Text("LEFEVER").font(.largeTitle).font(.callout)
+            Text("LEFEVER")
+                .font(.custom("Baskerville", size: 40))
             Image("Lefever")
                 .resizable()
                 .frame(width: 300, height: 300)

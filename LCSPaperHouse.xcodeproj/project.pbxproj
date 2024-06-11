@@ -21,6 +21,9 @@
 		83B68E352C0A574F0087E8B1 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B68E342C0A574E0087E8B1 /* StartingView.swift */; };
 		83B68E382C0A5ADD0087E8B1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B68E372C0A5ADD0087E8B1 /* LoginView.swift */; };
 		83B68E3A2C0A5BE50087E8B1 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B68E392C0A5BE50087E8B1 /* HouseView.swift */; };
+		83D040A52C17D5E400370829 /* MackemzieHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D040A42C17D5E400370829 /* MackemzieHistoryView.swift */; };
+		83D040A72C17DD3100370829 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D040A62C17DD3100370829 /* RankView.swift */; };
+		83D040A92C17DE8900370829 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D040A82C17DE8900370829 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		83B68E342C0A574E0087E8B1 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
 		83B68E372C0A5ADD0087E8B1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		83B68E392C0A5BE50087E8B1 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
+		83D040A42C17D5E400370829 /* MackemzieHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MackemzieHistoryView.swift; sourceTree = "<group>"; };
+		83D040A62C17DD3100370829 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
+		83D040A82C17DE8900370829 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +97,11 @@
 			isa = PBXGroup;
 			children = (
 				83B68E282C0A57320087E8B1 /* ContentView.swift */,
-				83B68E392C0A5BE50087E8B1 /* HouseView.swift */,
-				83B68E372C0A5ADD0087E8B1 /* LoginView.swift */,
 				83B68E342C0A574E0087E8B1 /* StartingView.swift */,
+				83B68E372C0A5ADD0087E8B1 /* LoginView.swift */,
+				83B68E392C0A5BE50087E8B1 /* HouseView.swift */,
+				83D040A62C17DD3100370829 /* RankView.swift */,
+				83D040A82C17DE8900370829 /* HistoryView.swift */,
 				839AAF0C2C0F4D5E0051C0D9 /* LefeverView.swift */,
 				83456EDD2C120F4F001B02A6 /* MackenzieView.swift */,
 				83456EDF2C12124C001B02A6 /* PullenView.swift */,
@@ -101,6 +109,7 @@
 				83456EE32C121529001B02A6 /* LefeverHistoryView.swift */,
 				83456EE52C121860001B02A6 /* LefeverMemberView.swift */,
 				83947F612C138FE100B3C237 /* LefeverEventView.swift */,
+				83D040A42C17D5E400370829 /* MackemzieHistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,11 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D040A72C17DD3100370829 /* RankView.swift in Sources */,
 				83B68E3A2C0A5BE50087E8B1 /* HouseView.swift in Sources */,
 				83456EE62C121860001B02A6 /* LefeverMemberView.swift in Sources */,
 				83456EDE2C120F4F001B02A6 /* MackenzieView.swift in Sources */,
 				83947F622C138FE100B3C237 /* LefeverEventView.swift in Sources */,
 				83B68E352C0A574F0087E8B1 /* StartingView.swift in Sources */,
+				83D040A52C17D5E400370829 /* MackemzieHistoryView.swift in Sources */,
+				83D040A92C17DE8900370829 /* HistoryView.swift in Sources */,
 				83B68E292C0A57320087E8B1 /* ContentView.swift in Sources */,
 				83B68E382C0A5ADD0087E8B1 /* LoginView.swift in Sources */,
 				83456EE42C121529001B02A6 /* LefeverHistoryView.swift in Sources */,

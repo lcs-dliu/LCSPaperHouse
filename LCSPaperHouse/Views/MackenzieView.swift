@@ -13,8 +13,7 @@ struct MackenzieView: View {
         VStack {
             
             Text("MACKENZIE")
-            .font(.largeTitle)
-            .font(.callout)
+                .font(.custom("Baskerville", size: 40))
             .foregroundColor(.red)
             Image("Mackenzie")
                 .resizable()

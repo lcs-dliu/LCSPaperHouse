@@ -9,38 +9,58 @@ import SwiftUI
 
 struct LefeverEventView: View {
     var body: some View {
-        ZStack{
-            VStack{
-                Text("L")
-                    .foregroundColor(Color.gray)
-                    .font(.custom("Baskerville", size: 300))
-
-            }
-            VStack{
-                Image("LCS logo")
-                    .resizable()
-                    .frame(width: 130, height: 130)
-                    .scaledToFit()
-            }
+        ZStack {
             
+            //First layer (background)
+            // Color.white
+            //   .ignoresSafeArea()
+            
+            //Second layer (rest of ---interface)
             VStack(alignment: .leading){
-                HStack{
-                    Text("Upcoming Events")
-                        .font(.custom("Baskerville", size: 30))
-                        .padding(.leading)
-                    Spacer()
-                }
-                VStack(alignment: .leading){
-                    Text("5/25.2024")
-                    Text("Regatta Day")
-                }
-                .padding(.leading)
                 
+                Spacer()
+                Text("Upcoming Events")
+                    .font(.custom("Baskerville", size: 30))
+                
+                // List of times
+                List{
+                    HStack{
+                        ZStack {
+                            Circle()
+                                .foregroundColor(.gray)
+                                .frame(width: 20)
+                            Circle()
+                                .foregroundColor(.white)
+                                .frame(width: 18)
+                        }
+                        VStack {
+                            HStack {
+                                Text("Retagga Day")
+                                Spacer()
+                            }
+                            HStack {
+                                Text("5/25/2024")
+                                    .foregroundColor(.gray)
+                                Spacer()
+                            }
+                        }
+                    }
+                    HStack{
+                }
+                    HStack{
+                    }
+                    Spacer()
+                    // Set the amount of vertical height we want this list to make up
+                    .frame(height: 500)
+                    //Adjust list style to match design
+                    .listStyle(.plain)
+                }
             }
         }
+        .padding()
     }
+}
       //  Spacer()
-    }
 
 
 #Preview{

@@ -17,6 +17,7 @@ struct HouseView: View {
             Text("Please choose a house you want to check")
             Image("Lefever")
             Text("LEFEVER")
+                .font(.custom("Baskerville", size:15))
             HStack{
                 VStack{
                     Image("Mackenzie")
@@ -25,6 +26,7 @@ struct HouseView: View {
                         .aspectRatio(1, contentMode: .fit)
                     Text("MACKENZIE")
                         .foregroundColor(.red)
+                        .font(.custom("Baskerville", size:15))
                 }
                 VStack{
                     Image("Pullen")
@@ -33,6 +35,7 @@ struct HouseView: View {
                         .aspectRatio(1, contentMode: .fit)
                     Text("PULLEN")
                         .foregroundColor(.blue)
+                        .font(.custom("Baskerville", size:15))
                 }
                 VStack{
                     Image("Sheldrake")
@@ -41,6 +44,7 @@ struct HouseView: View {
                         .aspectRatio(1, contentMode: .fit)
                     Text("SHELDRAKE")
                         .foregroundColor(.green)
+                        .font(.custom("Baskerville", size:15))
                 }
 
             }
@@ -69,10 +73,10 @@ struct HouseView: View {
             .tag(2)
     
 
-        Text("History")
+        Text("Introduction")
             .tabItem {
                 Image(systemName: "book.fill")
-                Text("History")
+                Text("Introduction")
             }
             .tag(3)
     }
