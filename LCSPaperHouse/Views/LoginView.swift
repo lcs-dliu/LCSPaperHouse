@@ -10,18 +10,25 @@ import SwiftUI
 
 struct LoginView: View {
     @State private var selectedPerson = "Lefever" // Default selected value
+    @State private var email = "" // State variable to store email input
     
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             VStack {
                 Image("LCS logo")
                 Text("Paper House")
                     .foregroundColor(Color("LCS green"))
                     .font(.largeTitle)
+                
                 Text("Please type in your LCS email")
-                RoundedRectangle(cornerRadius: 20)
+                
+                TextField("Enter your email", text: $email)
+                    .padding()
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(10)
                     .frame(width: 300, height: 40)
-                    .foregroundColor(Color.gray)
+                    .textInputAutocapitalization(.never) // Ensure email is lowercase
+                
                 Text("Please choose your own house")
                 
                 // Picker for selections
