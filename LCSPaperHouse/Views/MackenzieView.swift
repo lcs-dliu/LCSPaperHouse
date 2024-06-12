@@ -9,19 +9,22 @@ import SwiftUI
 
 struct MackenzieView: View {
     var body: some View {
-        Spacer()
-        VStack {
-            
-            Text("MACKENZIE")
-                .font(.custom("Baskerville", size: 40))
-            .foregroundColor(.red)
-            Image("Mackenzie")
-                .resizable()
-                .frame(width: 300, height: 300)
-                .aspectRatio(1, contentMode: .fit)
+        NavigationStack{
+            NavigationLink(destination:  MackemzieHistoryView()){
+                VStack {
+                    
+                    Text("MACKENZIE")
+                        .font(.custom("Baskerville", size: 40))
+                        .foregroundColor(.red)
+                    Image("Mackenzie")
+                        .resizable()
+                        .frame(width: 300, height: 300)
+                        .aspectRatio(1, contentMode: .fit)
+                }
+            }
+            Spacer()
+                .padding()
         }
-        Spacer()
-        .padding()
     }
 }
 

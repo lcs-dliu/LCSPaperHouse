@@ -10,7 +10,9 @@ import SwiftUI
 struct LefeverMemberView: View {
     var body: some View {
 
-            ZStack{
+        ZStack{
+                
+                //list with items
                 List{
                     HStack{
                         VStack(alignment: .leading) {
@@ -57,42 +59,17 @@ struct LefeverMemberView: View {
                     }
                     HStack{
                     }
-                    // Set the amount of vertical height we want this list to make up
-                    .frame(height: 500)
-                    //Adjust list style to match design
-                    .listStyle(.plain)
                 }
-            }
+           
+                // Set the amount of vertical height we want this list to make up
+                .frame(height: 500)
+                //Adjust list style to match design
+                .listStyle(.plain)
         }
-   
+    }
 }
       //  Spacer()
 
 #Preview {
-    TabView(selection: Binding.constant(2)) {
-        
-        
-        Text("Introduction")
-            .tabItem{
-                Image(systemName: "book.fill")
-                Text("Introduction")
-            }
-            .tag(1)
-        LefeverMemberView()
-            .tabItem{
-                Image(systemName: "person.fill")
-                Text("People")
-            }
-            .tag(2)
-    
-
-        Text("Calendar")
-            .tabItem {
-                Image(systemName: "calendar")
-                Text("Calendar")
-            }
-            .tag(3)
-        
-
-    }
+    LandingView()
 }

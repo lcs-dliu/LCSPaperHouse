@@ -64,28 +64,5 @@ struct LefeverEventView: View {
 
 
 #Preview{
-    TabView(selection: Binding.constant(3)) {
-        
-        Text("Introduction")
-            .tabItem{
-                Image(systemName: "book.fill")
-                Text("Introduction")
-            }
-            .tag(1)
-        
-        Text("People")
-            .tabItem{
-                Image(systemName: "person.fill")
-                Text("People")
-            }
-            .tag(2)
-    
-        LefeverEventView()
-            .tabItem {
-                Image(systemName: "calendar")
-                Text("Calendar")
-            }
-            .tag(3)
-        
-    }
+    LandingView()
 }

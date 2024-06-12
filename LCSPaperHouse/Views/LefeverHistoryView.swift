@@ -36,29 +36,5 @@ struct LefeverHistoryView: View {
 }
 
 #Preview {
-    TabView(selection: Binding.constant(1)) {
-        LefeverHistoryView()
-            .tabItem{
-                Image(systemName: "book.fill")
-                Text("Introduction")
-            }
-            .tag(1)
-
-        Text("People")
-            .tabItem{
-                Image(systemName: "person.fill")
-                Text("People")
-            }
-            .tag(2)
-    
-
-        Text("Calendar")
-            .tabItem {
-                Image(systemName: "calendar")
-                Text("Calendar")
-            }
-            .tag(3)
-        
-        
-    }
+    LandingView()
 }

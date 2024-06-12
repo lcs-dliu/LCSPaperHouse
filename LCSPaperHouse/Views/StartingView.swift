@@ -9,16 +9,20 @@ import SwiftUI
 
 struct StartingView: View {
     var body: some View {
-        VStack {
-            Image("LCS logo")
-            Text("Paper House")
-                .foregroundColor(Color("LCS green"))
-                .font(.largeTitle)
-            Spacer()
-            Text("Click here to get started")
-                .font(.custom("Arial", size: 25))
+        NavigationStack { // Adding NavigationStack here
+            VStack {
+                Image("LCS logo")
+                Text("Paper House")
+                    .foregroundColor(Color("LCS green"))
+                    .font(.largeTitle)
+                Spacer()
+                NavigationLink(destination: LoginView()) {
+                    Text("Click here to get started")
+                        .font(.custom("Arial", size: 25))
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 

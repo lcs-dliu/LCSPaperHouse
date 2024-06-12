@@ -26,29 +26,5 @@ struct HistoryView: View {
 }
 
 #Preview {
-    TabView(selection: Binding.constant(3)) {
-        
-        Text("Home")
-            .tabItem{
-                Image(systemName: "house.fill")
-                    .foregroundColor(.white)
-                Text("Home")
-            }
-            .tag(1)
-        
-        Text("Rank")
-            .tabItem{
-                Image(systemName: "chart.bar.xaxis")
-                Text("Rank")
-            }
-            .tag(2)
-        
-        HistoryView()
-            .tabItem {
-                Image(systemName: "book.fill")
-                Text("Introduction")
-            }
-            .tag(3)
-        
-    }
+    HistoryView()
 }

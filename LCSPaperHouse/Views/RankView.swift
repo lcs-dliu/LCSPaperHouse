@@ -20,32 +20,10 @@ struct RankView: View {
         }
     }
 }
+
   
 
 #Preview {
-    TabView(selection: Binding.constant(2)) {
-        
-        Text("Home")
-        .tabItem{
-            Image(systemName: "house.fill")
-                .foregroundColor(.white)
-            Text("Home")
-        }
-        .tag(1)
-
-        RankView()
-        .tabItem{
-            Image(systemName: "chart.bar.xaxis")
-            Text("Rank")
-        }
-        .tag(2)
-
-    Text("Introduction")
-        .tabItem {
-            Image(systemName: "book.fill")
-            Text("Introduction")
-        }
-        .tag(3)
-     
-    }
+    RankView()
+    
 }

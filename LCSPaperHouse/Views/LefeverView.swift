@@ -10,16 +10,23 @@ import SwiftUI
 struct LefeverView: View {
     var body: some View {
         Spacer()
-        VStack {
-            Text("LEFEVER")
-                .font(.custom("Baskerville", size: 40))
-            Image("Lefever")
-                .resizable()
-                .frame(width: 300, height: 300)
-                .aspectRatio(1, contentMode: .fit)
+        NavigationStack{
+            NavigationLink(destination:  LandingView()){
+                VStack {
+                    
+                    Text("LEFEVER")
+                        .font(.custom("Baskerville", size: 40))
+                        .foregroundColor(.black)
+                    Image("Lefever")
+                        .resizable()
+                        .frame(width: 300, height: 300)
+                        .aspectRatio(1, contentMode: .fit)
+                }
+            }
+                Spacer()
+                    .padding()
+           
         }
-        Spacer()
-        .padding()
     }
 }
 

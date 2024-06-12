@@ -12,6 +12,7 @@
 		83456EE22C12127F001B02A6 /* SheldrakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456EE12C12127F001B02A6 /* SheldrakeView.swift */; };
 		83456EE42C121529001B02A6 /* LefeverHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456EE32C121529001B02A6 /* LefeverHistoryView.swift */; };
 		83456EE62C121860001B02A6 /* LefeverMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456EE52C121860001B02A6 /* LefeverMemberView.swift */; };
+		8347A1522C19FA390068C745 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347A1512C19FA390068C745 /* LandingView.swift */; };
 		83947F622C138FE100B3C237 /* LefeverEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83947F612C138FE100B3C237 /* LefeverEventView.swift */; };
 		839AAF0D2C0F4D5E0051C0D9 /* LefeverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AAF0C2C0F4D5E0051C0D9 /* LefeverView.swift */; };
 		83B68E272C0A57320087E8B1 /* LCSPaperHouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B68E262C0A57320087E8B1 /* LCSPaperHouseApp.swift */; };
@@ -32,6 +33,7 @@
 		83456EE12C12127F001B02A6 /* SheldrakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheldrakeView.swift; sourceTree = "<group>"; };
 		83456EE32C121529001B02A6 /* LefeverHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LefeverHistoryView.swift; sourceTree = "<group>"; };
 		83456EE52C121860001B02A6 /* LefeverMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LefeverMemberView.swift; sourceTree = "<group>"; };
+		8347A1512C19FA390068C745 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		83947F612C138FE100B3C237 /* LefeverEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LefeverEventView.swift; sourceTree = "<group>"; };
 		839AAF0C2C0F4D5E0051C0D9 /* LefeverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LefeverView.swift; sourceTree = "<group>"; };
 		83B68E232C0A57320087E8B1 /* LCSPaperHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCSPaperHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 				83456EE52C121860001B02A6 /* LefeverMemberView.swift */,
 				83947F612C138FE100B3C237 /* LefeverEventView.swift */,
 				83D040A42C17D5E400370829 /* MackemzieHistoryView.swift */,
+				8347A1512C19FA390068C745 /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				83B68E3A2C0A5BE50087E8B1 /* HouseView.swift in Sources */,
 				83456EE62C121860001B02A6 /* LefeverMemberView.swift in Sources */,
 				83456EDE2C120F4F001B02A6 /* MackenzieView.swift in Sources */,
+				8347A1522C19FA390068C745 /* LandingView.swift in Sources */,
 				83947F622C138FE100B3C237 /* LefeverEventView.swift in Sources */,
 				83B68E352C0A574F0087E8B1 /* StartingView.swift in Sources */,
 				83D040A52C17D5E400370829 /* MackemzieHistoryView.swift in Sources */,
