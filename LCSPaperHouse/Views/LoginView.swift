@@ -33,7 +33,7 @@ struct LoginView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle()) // You can change the style as needed
                 
-                NavigationLink(destination: HouseView()) {
+                NavigationLink(destination: MainPageView()) {
                     Text("Done")
                         .font(.custom("Arial", size: 25))
                 }

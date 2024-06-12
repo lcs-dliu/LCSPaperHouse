@@ -9,19 +9,22 @@ import SwiftUI
 
 struct PullenView: View {
     var body: some View {
-        Spacer()
-        VStack {
-            
-            Text("PULLEN")
-                .font(.custom("Baskerville", size: 40))
-            .foregroundColor(.blue)
-            Image("Pullen")
-                .resizable()
-                .frame(width: 300, height: 300)
-                .aspectRatio(1, contentMode: .fit)
+        NavigationStack{
+            NavigationLink(destination:  PullenHistoryView()){
+                VStack {
+                    
+                    Text("PULLEN")
+                        .font(.custom("Baskerville", size: 40))
+                        .foregroundColor(.blue)
+                    Image("Pullen")
+                        .resizable()
+                        .frame(width: 300, height: 300)
+                        .aspectRatio(1, contentMode: .fit)
+                }
+            }
+            Spacer()
+                .padding()
         }
-        Spacer()
-        .padding()
     }
 }
 

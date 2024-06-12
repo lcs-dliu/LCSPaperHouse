@@ -24,6 +24,5 @@ struct RankView: View {
   
 
 #Preview {
-    RankView()
-    
+    MainPageView()
 }

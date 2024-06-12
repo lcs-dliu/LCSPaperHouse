@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8311D9CE2C1A2EA1002B449D /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311D9CD2C1A2EA1002B449D /* MainPageView.swift */; };
 		83456EDE2C120F4F001B02A6 /* MackenzieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456EDD2C120F4F001B02A6 /* MackenzieView.swift */; };
 		83456EE02C12124C001B02A6 /* PullenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456EDF2C12124C001B02A6 /* PullenView.swift */; };
 		83456EE22C12127F001B02A6 /* SheldrakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456EE12C12127F001B02A6 /* SheldrakeView.swift */; };
 		83456EE42C121529001B02A6 /* LefeverHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456EE32C121529001B02A6 /* LefeverHistoryView.swift */; };
 		83456EE62C121860001B02A6 /* LefeverMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456EE52C121860001B02A6 /* LefeverMemberView.swift */; };
 		8347A1522C19FA390068C745 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347A1512C19FA390068C745 /* LandingView.swift */; };
+		8347A1542C1A02700068C745 /* PullenHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347A1532C1A02700068C745 /* PullenHistoryView.swift */; };
+		8347A1562C1A02FD0068C745 /* SheldrakeHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347A1552C1A02FD0068C745 /* SheldrakeHistoryView.swift */; };
 		83947F622C138FE100B3C237 /* LefeverEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83947F612C138FE100B3C237 /* LefeverEventView.swift */; };
 		839AAF0D2C0F4D5E0051C0D9 /* LefeverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AAF0C2C0F4D5E0051C0D9 /* LefeverView.swift */; };
 		83B68E272C0A57320087E8B1 /* LCSPaperHouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B68E262C0A57320087E8B1 /* LCSPaperHouseApp.swift */; };
@@ -28,12 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8311D9CD2C1A2EA1002B449D /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		83456EDD2C120F4F001B02A6 /* MackenzieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MackenzieView.swift; sourceTree = "<group>"; };
 		83456EDF2C12124C001B02A6 /* PullenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullenView.swift; sourceTree = "<group>"; };
 		83456EE12C12127F001B02A6 /* SheldrakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheldrakeView.swift; sourceTree = "<group>"; };
 		83456EE32C121529001B02A6 /* LefeverHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LefeverHistoryView.swift; sourceTree = "<group>"; };
 		83456EE52C121860001B02A6 /* LefeverMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LefeverMemberView.swift; sourceTree = "<group>"; };
 		8347A1512C19FA390068C745 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		8347A1532C1A02700068C745 /* PullenHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullenHistoryView.swift; sourceTree = "<group>"; };
+		8347A1552C1A02FD0068C745 /* SheldrakeHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheldrakeHistoryView.swift; sourceTree = "<group>"; };
 		83947F612C138FE100B3C237 /* LefeverEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LefeverEventView.swift; sourceTree = "<group>"; };
 		839AAF0C2C0F4D5E0051C0D9 /* LefeverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LefeverView.swift; sourceTree = "<group>"; };
 		83B68E232C0A57320087E8B1 /* LCSPaperHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCSPaperHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +118,10 @@
 				83456EE52C121860001B02A6 /* LefeverMemberView.swift */,
 				83947F612C138FE100B3C237 /* LefeverEventView.swift */,
 				83D040A42C17D5E400370829 /* MackemzieHistoryView.swift */,
+				8347A1532C1A02700068C745 /* PullenHistoryView.swift */,
+				8347A1552C1A02FD0068C745 /* SheldrakeHistoryView.swift */,
 				8347A1512C19FA390068C745 /* LandingView.swift */,
+				8311D9CD2C1A2EA1002B449D /* MainPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,11 +205,14 @@
 				83B68E352C0A574F0087E8B1 /* StartingView.swift in Sources */,
 				83D040A52C17D5E400370829 /* MackemzieHistoryView.swift in Sources */,
 				83D040A92C17DE8900370829 /* HistoryView.swift in Sources */,
+				8347A1562C1A02FD0068C745 /* SheldrakeHistoryView.swift in Sources */,
 				83B68E292C0A57320087E8B1 /* ContentView.swift in Sources */,
 				83B68E382C0A5ADD0087E8B1 /* LoginView.swift in Sources */,
 				83456EE42C121529001B02A6 /* LefeverHistoryView.swift in Sources */,
 				839AAF0D2C0F4D5E0051C0D9 /* LefeverView.swift in Sources */,
 				83456EE02C12124C001B02A6 /* PullenView.swift in Sources */,
+				8347A1542C1A02700068C745 /* PullenHistoryView.swift in Sources */,
+				8311D9CE2C1A2EA1002B449D /* MainPageView.swift in Sources */,
 				83456EE22C12127F001B02A6 /* SheldrakeView.swift in Sources */,
 				83B68E272C0A57320087E8B1 /* LCSPaperHouseApp.swift in Sources */,
 			);

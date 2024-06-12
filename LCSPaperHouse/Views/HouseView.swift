@@ -68,5 +68,5 @@ struct HouseView: View {
 }
 
 #Preview {
-    HouseView()
+        MainPageView() 
 }
