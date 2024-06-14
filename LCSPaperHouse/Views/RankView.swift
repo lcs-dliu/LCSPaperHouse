@@ -16,6 +16,10 @@ struct RankView: View {
             Text("Paper House")
                 .foregroundColor(Color("LCS green"))
                 .font(.largeTitle)
+            Image("Rank")
+                .resizable()
+                .frame(width: 300, height: 150)
+                .aspectRatio(1, contentMode: .fit)
          Spacer()
         }
     }

@@ -45,6 +45,7 @@ struct LoginView: View {
                         .font(.custom("Arial", size: 25))
                 }
                 .padding()
+                .disabled(email.isEmpty ? true : false)
                 
                 Spacer() // Ensure proper layout
             }
