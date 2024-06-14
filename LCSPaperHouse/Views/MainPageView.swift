@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct MainPageView: View {
+    
     var body: some View {
         TabView{
+            
             HouseView()
                 .tabItem{
                     Label("Houses", systemImage: "book.fill")

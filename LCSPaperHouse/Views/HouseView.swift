@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+
 struct HouseView: View {
+    
     var body: some View {
         NavigationStack{
             VStack {
@@ -24,49 +26,64 @@ struct HouseView: View {
                             .foregroundColor(.black)
                     }
                 }
+        
                 HStack{
-                        NavigationLink(destination: MackenzieView()){
-                            VStack{
-                            Image("Mackenzie")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .aspectRatio(1, contentMode: .fit)
-                            Text("MACKENZIE")
-                                .foregroundColor(.red)
-                                .font(.custom("Baskerville", size:15))
-                        }
-                    }
-                    NavigationLink(destination: PullenView()){
-                        VStack{
-                            Image("Pullen")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .aspectRatio(1, contentMode: .fit)
-                            Text("PULLEN")
-                                .foregroundColor(.blue)
-                                .font(.custom("Baskerville", size:15))
-                        }
-                    }
-                    NavigationLink(destination: SheldrakeView()){
-                        VStack{
-                            Image("Sheldrake")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .aspectRatio(1, contentMode: .fit)
-                            Text("SHELDRAKE")
-                                .foregroundColor(.green)
-                                .font(.custom("Baskerville", size:15))
-                        }
+                    ForEach(allHouses, id: \.title) { currentHouses in
+                        NavigationLink(destination: {
+                                NavigationLink(destination: {
+                                    HousesHistoryView(houses: currentHouses)
+                                }, label: {
+                                    ArraysView(houses: currentHouses)
+                                })
+                        }, label: {
+                            SmallLogoView(houses: currentHouses)
+                        })
+                        
                     }
                 }
-                
+                    //                    NavigationLink(destination: MackenzieView()){
+                    //                            VStack{
+                    //                            Image("Mackenzie")
+                    //                                .resizable()
+                    //                                .frame(width: 100, height: 100)
+                    //                                .aspectRatio(1, contentMode: .fit)
+                    //                            Text("MACKENZIE")
+                    //                                .foregroundColor(.red)
+                    //                                .font(.custom("Baskerville", size:15))
+                    //                        }
+                    //                    }
+                    //                    NavigationLink(destination: PullenView()){
+                    //                        VStack{
+                    //                            Image("Pullen")
+                    //                                .resizable()
+                    //                                .frame(width: 100, height: 100)
+                    //                                .aspectRatio(1, contentMode: .fit)
+                    //                            Text("PULLEN")
+                    //                                .foregroundColor(.blue)
+                    //                                .font(.custom("Baskerville", size:15))
+                    //                        }
+                    //                    }
+                    //                    NavigationLink(destination: SheldrakeView()){
+                    //                        VStack{
+                    //                            Image("Sheldrake")
+                    //                                .resizable()
+                    //                                .frame(width: 100, height: 100)
+                    //                                .aspectRatio(1, contentMode: .fit)
+                    //                            Text("SHELDRAKE")
+                    //                                .foregroundColor(.green)
+                    //                                .font(.custom("Baskerville", size:15))
+                    //                        }
+                    //                    }
+                    //                }
+                    
+                }
             }
+            // Spacer()
+            //        .padding()
         }
-       // Spacer()
-//        .padding()
     }
+    
+#Preview {
+    MainPageView()
 }
 
-#Preview {
-        MainPageView() 
-}

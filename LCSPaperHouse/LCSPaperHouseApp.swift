@@ -11,7 +11,7 @@ import SwiftUI
 struct LCSPaperHouseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainPageView()
         }
     }
 }
